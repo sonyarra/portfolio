@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Jura";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CDC682;
+    overflow-x: hidden; /* Добавлено для устранения горизонтальной прокрутки */
+}
+
+.letters_main {
+    margin-bottom: 20px;
+    max-width: 100%; /* Добавлено для ограничения ширины изображения */
+    height: auto; /* Добавлено для сохранения пропорций изображения */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 176px;
+    gap: 70px;
+    font-weight: 500px;
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #917800;
+}
+
+.page1 {
+    display: flex;
+    padding: 0 30px;
+    justify-content: center;
+    width: 100%;
+    height: 904px;
+}
+
+.name {
+    font-size: 128px;
+    font-weight: 100px;
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+    margin-bottom: 80px;
+}
+
+.green {
+    color: #917800;
+}
+
+.green2 {
+    color: #917800;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2 {
+    display: flex;
+    padding: 30px 30px;
+    width: 100%;
+    height: 1080px;
+    
+}
+
+.star_about_me {
+    position: absolute;
+    margin-top: 200px;
+    max-width: 100%; /* Добавлено для ограничения ширины изображения */
+    height: auto; /* Добавлено для сохранения пропорций изображения */
+}
+
+.text_block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 146px;
+    padding: 20px; /* добавляем внутренний отступ для текста */
+}
+
+.text_about_me {
+    font-weight: 500;
+    font-size: 64px;
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+}
+
+.text_about_me2 {
+    font-weight: 300;
+    font-size: 48px;
+    max-width: 100%; /* Добавлено для ограничения ширины текста */
+}
+
+.vector_main{
+    position: absolute;
+   top: 600px;
+    left: 0px;
+    max-width: 100%; /* или конкретное значение в пикселях */
+    height: auto;
+}
+
+.stars_dekstop_main{
+    position: absolute;
+    top: 450px;
+    right: 0px;
+    max-width: 100%; /* или конкретное значение в пикселях */
+    height: auto;
+}
+
+.vector_about_me{
+    position: absolute;
+    left: -30px;
+    top: 850px;
+  
+}
+
+.content{
+    display: flex;
+    position: relative;
+   
+}
+
+
+.me{
+    width: 833px;
+    height: 799px;
+    position: absolute;
+    transform: translateX(20%);
+    margin-top: 100px;
+    right: -850px;
+}
+
+.page3 {
+    display: flex;
+    padding: 30px 30px;
+    width: 100%;
+    height: 1080px;
+}
+
+.content_3{
+    display: flex;
+    position: relative;
+
+}
+.gr_red{
+    display: flex;
+    margin-left: 186px;
+    margin-top: 31px;
+}
+.icons_left{
+    display: flex;
+    padding: 16px 0;
+    row-gap: 45px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line_red{
+    margin-right: 45px;
+    width: 87px; /* Фиксированная ширина блока line_red */
+    height: 766px; /* Фиксированная высота блока line_red */
+}
+
+.icon_wrapper {
+    position: relative;
+}
+
+.icon{
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+.icon_enlarged {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+
+.icon_wrapper:hover .icon_enlarged {
+    display: block;
+    
+}
+
+.icon_wrapper:hover .icon {
+    opacity: 0;
+    transition: 0.5s;
+transform: scale(1.25);
+}
+
+.prog{
+    margin-top: 40px;
+    margin-left: -185px;
+}
+
+.programming{
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    gap: 100px;
+}
+
+.icons_right_part{
+    display: flex;
+    padding: 16px 0;
+    row-gap: 45px;
+    flex-direction: column;
+    align-items: center;
+}
+.line_prog{
+    margin-right: 45px;
+    width: 87px; 
+    height: 600px;
+}
+
+.right_line {
+    margin-right: 45px;
+    display: flex;
+    
+}
+
+.icons_right {
+    display: flex;
+    padding: 16px 0;
+    gap: 45px;
+    flex-direction: column;
+}
+
+.yellow_star{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 1000px;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.pink_star{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 600px;
+   top: 200px;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.page4 { 
+    padding: 30px 30px; 
+    width: 100%; 
+    height: 1080px;
+}
+
+.page5 {
+    padding: 30px 30px; 
+    width: 100%;
+    height: 1080px;
+    display: flex; 
+    align-items: center;
+}
+
+.projects { 
+    float: right; 
+    width: 494px; 
+    height: 140px; 
+}
+
+.content_4 { 
+    width: 100%;   
+    height: 100%;  
+}
+
+.iowa { 
+    left: 100px; 
+    position: relative; 
+}
+
+.skate { 
+    top: -120px; 
+    position: relative; 
+}
+
+.college { 
+    position: relative; 
+    bottom: 190px; 
+    left: 100px; 
+}
+
+.poster { 
+    position: relative; 
+    bottom: 350px; 
+    left: 250px; 
+}
+
+.ink { 
+    position: relative; 
+    bottom: 190px; 
+    left: 150px; 
+}
+
+.vector_back { 
+    position: absolute; 
+    margin-top: 100px; 
+    margin-left: 100px; 
+}
+
+.content_5{
+    align-items: center;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    row-gap: 65px;
+    column-gap: 100px; 
+
+}
+
+.contacts_element{
+    row-gap: 65px;
+    column-gap: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.svyaz {
+    top: 50px;
+position: relative;
+}
+
+
+.icons {
+    row-gap: 65px;
+    gap: 45px;
+    align-items: center; /* выравниваем элементы по центру */
+    display: flex; /* устанавливаем flex-контейнер */
+}
+
+.txt{
+font-size: 4em;
+color: black;
+}
+
+.txt:hover{
+    color:#917800;
+}
+
+.face{
+    position: relative;
+    bottom: 600px;
+    left: 30px;
+    animation: swing 2s ease-in-out infinite;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.star_call{
+    position: relative;
+    bottom: 250px;
+    left: 170px;
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg); /* качаем в одну сторону */
+    }
+    100% {
+        transform: rotate(0deg); /* и возвращаем обратно */
+    }
+}
+
+.images{
+    position: relative;
+    left: 20px;
+}
